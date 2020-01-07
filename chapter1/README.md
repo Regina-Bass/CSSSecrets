@@ -16,7 +16,7 @@ Sometimes maintainability and brevity can be mutually exclusive. For example if 
 CurrentColor is the first ever variable in CSS (though some argue that it was em). Rather than corresponsding to a static value. it resolves to the value of the color property.
 
 ### Inheritance
-The `inherit` keyword, is widely known, but is often forgotten. It can be used with any CSS property and it always corresponds to the computed value of the parent element. For example, to give form elements the same font as the rest of the page, you don't have to respecify it, you can simply use `inherit`!
+The `inherit` keyword is widely known, but is often forgotten. It can be used with any CSS property and it always corresponds to the computed value of the parent element. For example, to give form elements the same font as the rest of the page, you don't have to respecify it, you can simply use `inherit`!
 `input, select, button { font: inherit; }` 
 
 ### Trust your eyes - not numbers
@@ -28,7 +28,12 @@ In the first rectangle, the brown square is mathematically vertically centered, 
 
 An extremely common example is padding in containers with text. Specifying the same amount of padding on all 4 sides will make it look uneven (usually makes top and bottom padding look larger). The reason for this is that letterforms are much more straight on the sides than their top and bottom, so our eyes perceive that extra space as extra padding. The solution is to specify less padding for the top and bottom sides if we want it to be perceived as being the same.
 
-### Responsive Web Design
+### Responsive Web Design /U
 RWD (Responsive Web Design) has been all the rage over the past few years. However, the emphasis is often placed on how important it is for websites to be “responsive,” leaving a lot unsaid about what good RWD entails.
 
 The common practice is testing a website in multiple resolutions and adding more and more media queries to fix the issues that arise. However, every media query adds overhead to future CSS changes, and they should not be added lightly. Every future edit to the CSS code requires checking whether any media queries apply, and potentially editing those too. This is often forgotten, resulting in breakage. The more media queries you add, the more fragile your CSS code becomes.
+
+### Shorthands and longhands
+The difference between: 
+`background: rebeccapurple;` and
+`background-color: rebeccapurple;`
