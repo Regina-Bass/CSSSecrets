@@ -6,8 +6,13 @@ The purpose of the maintainability exercise is to minimize code duplication. You
 <img src="maintainability/maintainability.jpeg" alt="Image of Maintainability Code output" height=70/>
 
 ### Maintainability vs Brevity
-Sometimes maintainability and brevity can be mutually exclusive. For example if your're creating a border where the thickness is different one one side only, while it's shorter to simply write `border-width:10px 10px 10px 0;` , it's much easier to read and maintain/edit if it was separated into two lines like:
+Sometimes maintainability and brevity can be mutually exclusive. For example if your're creating a border where the thickness is different on one side only, while it's shorter to simply write `border-width:10px 10px 10px 0;` , it's much easier to read and maintain/edit if it was separated into two lines like:
 ``` 
  border-width: 10px; 
  border-left-width: 0;
  ```
+
+### CurrentColor
+CurrentColor is the first ever variable in CSS (though some argue that it was em). Rather than corresponsding to a static value. it resolves to the value of the color property.
+
+### Inheritance
