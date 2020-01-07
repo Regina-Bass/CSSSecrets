@@ -25,3 +25,10 @@ For example, it’s well known in visual design literature that our eyes don’t
 
 <img src="maintainability/opticalIllusion.jpeg" alt="optical illusion">
 In the first rectangle, the brown square is mathematically vertically centered, but doesn’t look so; in the second one, it is actually placed slightly above the geometrical center, but it looks more centered to the human eye
+
+An extremely common example is padding in containers with text. Specifying the same amount of padding on all 4 sides will make it look uneven (usually makes top and bottom padding look larger). The reason for this is that letterforms are much more straight on the sides than their top and bottom, so our eyes perceive that extra space as extra padding. The solution is to specify less padding for the top and bottom sides if we want it to be perceived as being the same.
+
+### Responsive Web Design
+RWD (Responsive Web Design) has been all the rage over the past few years. However, the emphasis is often placed on how important it is for websites to be “responsive,” leaving a lot unsaid about what good RWD entails.
+
+The common practice is testing a website in multiple resolutions and adding more and more media queries to fix the issues that arise. However, every media query adds overhead to future CSS changes, and they should not be added lightly. Every future edit to the CSS code requires checking whether any media queries apply, and potentially editing those too. This is often forgotten, resulting in breakage. The more media queries you add, the more fragile your CSS code becomes.
