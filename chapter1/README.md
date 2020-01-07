@@ -37,3 +37,7 @@ The common practice is testing a website in multiple resolutions and adding more
 The difference between: 
 `background: rebeccapurple;` and
 `background-color: rebeccapurple;`
+The former will always give you a rebeccapurple background, whereas the latter could be anything since there might be a `background-image` declaration in effect. The problem people run into with longhands are that they don't reset all the other properties that could be affecting what you're trying to accomplish.
+Using all longhands is not the greatest idea either, because there is the risk of missing some or WG may release new ones in the furure. So, to future-proof and write good defensive code, try to use shorthands. 
+
+However there are some good use cases of longahands:
