@@ -16,3 +16,12 @@ Sometimes maintainability and brevity can be mutually exclusive. For example if 
 CurrentColor is the first ever variable in CSS (though some argue that it was em). Rather than corresponsding to a static value. it resolves to the value of the color property.
 
 ### Inheritance
+The `inherit` keyword, is widely known, but is often forgotten. It can be used with any CSS property and it always corresponds to the computed value of the parent element. For example, to give form elements the same font as the rest of the page, you don't have to respecify it, you can simply use `inherit`!
+`input, select, button { font: inherit; }` 
+
+### Trust your eyes - not numbers
+Sometimes accurate measurements result in looking inaccurate, and design needs to account for that.
+For example, it’s well known in visual design literature that our eyes don’t perceive something as being vertically centered when it is. Instead, it needs to be slightly above the geometrical middle to be perceived as such. See that phenomenon in action below:
+
+<img src="maintainability/opticalIllusion.jpeg" alt="optical illusion">
+In the first rectangle, the brown square is mathematically vertically centered, but doesn’t look so; in the second one, it is actually placed slightly above the geometrical center, but it looks more centered to the human eye
