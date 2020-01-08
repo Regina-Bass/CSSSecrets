@@ -56,3 +56,16 @@ The former will always give you a rebeccapurple background, whereas the latter c
 Using all longhands is not the greatest idea either, because there is the risk of missing some or WG may release new ones in the furure. So, to future-proof and write good defensive code, try to use shorthands. 
 
 However there are some good use cases of longahands:
+```
+background: url(tr.png) no-repeat top right / 2em 2em,
+            url(br.png) no-repeat bottom right / 2em 2em,
+            url(bl.png) no-repeat bottom left / 2em 2em;
+```
+since only one value is provided for the size and repeat we can exapnd it and apply to every element using:
+```
+background: url(tr.png) top right,
+            url(br.png) bottom right,
+            url(bl.png) bottom left;
+background-size: 2em 2em;
+background-repeat: no-repeat;
+```
