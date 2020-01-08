@@ -1,0 +1,8 @@
+div{
+height: 100px;
+background: #655;
+//border: 20px solid #655;
+outline:2px dashed white;
+margin: 50px;
+outline-offset: -10px;
+}
