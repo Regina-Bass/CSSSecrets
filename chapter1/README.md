@@ -69,3 +69,21 @@ background: url(tr.png) top right,
 background-size: 2em 2em;
 background-repeat: no-repeat;
 ```
+The ("/") slash above is to combat disambiguity in the shorthand. Read more about it by looking up the syntax.
+
+### Preprocessors
+Preprocessors is the last topic in this chapter. For more information on preprocessors check out the paper I wrote found on the LocalSports repository. 
+
+Lea Verous says that one should not be dependent on Preprocessors and its use must be a concious decision. She reccommends starting with pure CSS then using preprcoessors when it becomes impossible to keep it "DRY". Many preprocessor-inspired features have been making their way into pure CSS (ex. calc(), color(), possibly nesting, <a href="w3.org/TR/css-variables-1">Variable-like Custom Properties</a> 
+Native features are generally much more powerful than the ones provided by preprocessors, as they are dynamic. For example, a preprocessor has no clue how to perform a calculation like 100% - 50px, because the value percentages resolve to is not known until the page is actually rendered. However, native CSS calc() has no trouble evaluating such expressions.
+
+Of course, native CSS features like these can be manipulated through scripting too. For example, you could use JS to change the value of a variable.
+```
+ul { --accent-color: purple; }
+ol { --accent-color: rebeccapurple; }
+li { background: var(--accent-color); }
+```
+The above example can be done with descednant selectors, but was used to show how dynamic variables are. 
+
+**FEATURED:**
+Myth.io is an experimental preprocessor that emulates native CSS features, instead of introducing proprietary syntax, essentially acting like a CSS polyfill.
