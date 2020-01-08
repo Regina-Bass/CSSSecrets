@@ -1,0 +1,8 @@
+div{
+  background: yellowgreen;
+  margin: 50px;
+  padding: 100px;
+  box-shadow: 0 0 0 10px #655,
+              0 0 0 15px deeppink, 
+              3px 2px 5px 18px royalblue;
+}
