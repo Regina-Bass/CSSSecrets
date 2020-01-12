@@ -1,0 +1,13 @@
+.button { transform: skewX(45deg); }
+.button > div { transform: skewX(-45deg); }
+
+.button {
+	display: inline-block;
+	padding: .5em 1em;
+	border: 0; margin: .5em;
+	background: #58a;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	font: bold 200%/1 sans-serif;
+}
